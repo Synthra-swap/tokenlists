@@ -11,6 +11,10 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://pbs.twimg.com/profile_images/1803434790680506368/tEAb8qfo_400x400.jpg',
     }, //WUOMI
+    '0x2922B2Ca5EB6b02fc5E1EBE57Fc1972eBB99F7e0': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x2922B2Ca5EB6b02fc5E1EBE57Fc1972eBB99F7e0.png',
+    }, //Synthra
   },
 }
 
