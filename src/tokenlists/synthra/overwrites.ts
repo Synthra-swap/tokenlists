@@ -15,6 +15,10 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x2922B2Ca5EB6b02fc5E1EBE57Fc1972eBB99F7e0.png',
     }, //Synthra
+    '0x04B03e3859A25040E373cC9E8806d79596D70686': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x04B03e3859A25040E373cC9E8806d79596D70686.png',
+    }, //Simulacra
   },
 }
 
