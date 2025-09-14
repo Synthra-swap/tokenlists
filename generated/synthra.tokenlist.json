@@ -7,32 +7,8 @@
     },
     "keywords": [],
     "logoURI": "https://pbs.twimg.com/profile_images/1901553077242798080/HLyntoRr_400x400.jpg",
-    "timestamp": "2025-07-04T14:36:57.554Z",
+    "timestamp": "2025-09-14T18:53:57.534Z",
     "tokens": [
-        {
-            "chainId": 4386,
-            "address": "0x911b4000D3422F482F4062a913885f7b035382Df",
-            "name": "USDC",
-            "symbol": "USDC",
-            "decimals": 18,
-            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
-        },
-        {
-            "chainId": 4386,
-            "address": "0x1b8FA17f94DB8481E17152AaB8D242d438180BCf",
-            "name": "Wrapped UOMI",
-            "symbol": "WUOMI",
-            "decimals": 18,
-            "logoURI": "https://pbs.twimg.com/profile_images/1803434790680506368/tEAb8qfo_400x400.jpg"
-        },
-        {
-            "chainId": 4386,
-            "address": "0x5B727Bf35dDba2A8DA966E29f7c769823e4Faf41",
-            "name": "Synthra",
-            "symbol": "SYN",
-            "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x5B727Bf35dDba2A8DA966E29f7c769823e4Faf41.png"
-        },
         {
             "chainId": 4386,
             "address": "0x04B03e3859A25040E373cC9E8806d79596D70686",
