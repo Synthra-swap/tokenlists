@@ -11,7 +11,7 @@
     "tokens": [
         {
             "chainId": 4386,
-            "address": "0xAA9C4829415BCe70c434b7349b628017C59EC2b1",
+            "address": "0x911b4000D3422F482F4062a913885f7b035382Df",
             "name": "USDC",
             "symbol": "USDC",
             "decimals": 18,
@@ -19,7 +19,7 @@
         },
         {
             "chainId": 4386,
-            "address": "0x5FCa78E132dF589c1c799F906dC867124a2567b2",
+            "address": "0x1b8FA17f94DB8481E17152AaB8D242d438180BCf",
             "name": "Wrapped UOMI",
             "symbol": "WUOMI",
             "decimals": 18,
@@ -27,11 +27,11 @@
         },
         {
             "chainId": 4386,
-            "address": "0x2922B2Ca5EB6b02fc5E1EBE57Fc1972eBB99F7e0",
+            "address": "0x5B727Bf35dDba2A8DA966E29f7c769823e4Faf41",
             "name": "Synthra",
             "symbol": "SYN",
             "decimals": 18,
-            "logoURI": "https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x2922B2Ca5EB6b02fc5E1EBE57Fc1972eBB99F7e0.png"
+            "logoURI": "https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x5B727Bf35dDba2A8DA966E29f7c769823e4Faf41.png"
         },
         {
             "chainId": 4386,
