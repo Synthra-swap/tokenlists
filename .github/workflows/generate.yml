@@ -8,6 +8,9 @@ on:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@v3
@@ -21,7 +24,7 @@ jobs:
           POKT_KEY: ${{ secrets.POKT_KEY }}
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: 'chore: Update generated tokenlists'
