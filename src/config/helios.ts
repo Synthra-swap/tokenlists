@@ -6,6 +6,6 @@ export default {
   },
   trustWalletNetwork: 'helios',
   addresses: {
-    multicaller: '0x0fB6EEDA6e90E90797083861A75D15752a27f59c',
+    multicaller: '0x6CFEbE3F2B2FE70A8D2c693CdEc84Fe715b481fA',
   },
 }

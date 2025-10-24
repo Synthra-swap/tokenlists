@@ -6,6 +6,6 @@ export default {
   },
   trustWalletNetwork: 'uomi',
   addresses: {
-    multicaller: '0x0fB6EEDA6e90E90797083861A75D15752a27f59c',
+    multicaller: '0xca11bde05977b3631167028862be2a173976ca11',
   },
 }

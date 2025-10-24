@@ -7,6 +7,6 @@ export default {
   },
   trustWalletNetwork: 'irys',
   addresses: {
-    multicaller: '0xe139b61c9B8Eebf32bb335cb11AA6B7Cd69e13f4',
+    multicaller: '0xca11bde05977b3631167028862be2a173976ca11',
   },
 }
