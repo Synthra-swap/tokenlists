@@ -1,11 +1,11 @@
 export default {
   name: 'UOMI',
-  rpc: 'https://finney.uomi.ai',
+  rpc: 'https://turing.uomi.ai',
   coingecko: {
     platformId: 'uomi',
   },
   trustWalletNetwork: 'uomi',
   addresses: {
-    multicaller: '0xb09B47D54DA16AcFFF6E9f62e7916227cCdC7AB5',
+    multicaller: '0x0fB6EEDA6e90E90797083861A75D15752a27f59c',
   },
 }

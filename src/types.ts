@@ -19,6 +19,8 @@ export enum Network {
   Taiko = '167000',
   Etherlink = '42793',
   Uomi = '4386',
+  Irys = '1270',
+  Helios = '42000',
 }
 
 export interface Config {
