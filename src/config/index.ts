@@ -17,6 +17,8 @@ import artela from './artela'
 import taiko from './taiko'
 import etherlink from './etherlink'
 import uomi from './uomi'
+import irys from './irys'
+import helios from './helios'
 
 const config: Configs = {
   [Network.Arbitrum]: arbitrum,
@@ -37,6 +39,8 @@ const config: Configs = {
   [Network.Taiko]: taiko,
   [Network.Etherlink]: etherlink,
   [Network.Uomi]: uomi,
+  [Network.Irys]: irys,
+  [Network.Helios]: helios,
 }
 
 export default config
