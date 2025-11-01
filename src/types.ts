@@ -21,6 +21,7 @@ export enum Network {
   Uomi = '4386',
   Irys = '1270',
   Helios = '42000',
+  arc = '5042002',
 }
 
 export interface Config {

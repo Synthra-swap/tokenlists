@@ -35,7 +35,7 @@ export const overwrites: OverwritesForList = {
     }, //USDC
   },
   [Network.Helios]: {
-    '0xD4949664cD82660AaE99bEdc034a0deA8A0bd517': {
+    '0xfBCf3Ce995991A4eAd57DB7b550aDD94ba761669': {
       logoURI:
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0xD4949664cD82660AaE99bEdc034a0deA8A0bd517.png',
     }, //WHELIOS
@@ -47,6 +47,29 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
     }, //USDC
-  }
+    '0x80b5a32E4F032B2a058b4F29EC95EEfEEB87aDcd': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x80b5a32E4F032B2a058b4F29EC95EEfEEB87aDcd.png',
+    }, //WETH
+    '0xd567B3d7B8FE3C79a1AD8dA978812cfC4Fa05e75': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0xd567B3d7B8FE3C79a1AD8dA978812cfC4Fa05e75.png',
+    }, //WBNB
+    
+  },
+  [Network.arc]: {
+    '0x911b4000D3422F482F4062a913885f7b035382Df': {
+      logoURI:
+         'https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
+    }, //WUSDC
+    '0x175CdB1D338945f0D851A741ccF787D343E57952': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x175CdB1D338945f0D851A741ccF787D343E57952.webp',
+    }, //USDT
+    '0xC5124C846c6e6307986988dFb7e743327aA05F19': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0xC5124C846c6e6307986988dFb7e743327aA05F19.png',
+    }, //SYNTHRA
+  },
 }
 

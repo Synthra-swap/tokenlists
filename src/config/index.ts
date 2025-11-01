@@ -19,6 +19,7 @@ import etherlink from './etherlink'
 import uomi from './uomi'
 import irys from './irys'
 import helios from './helios'
+import arc from './arc'
 
 const config: Configs = {
   [Network.Arbitrum]: arbitrum,
@@ -41,6 +42,7 @@ const config: Configs = {
   [Network.Uomi]: uomi,
   [Network.Irys]: irys,
   [Network.Helios]: helios,
+  [Network.arc]: arc,
 }
 
 export default config
