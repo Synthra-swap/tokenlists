@@ -1,13 +1,13 @@
 {
     "name": "Synthra",
     "version": {
-        "major": 6,
+        "major": 4,
         "minor": 0,
         "patch": 1
     },
     "keywords": [],
     "logoURI": "https://pbs.twimg.com/profile_images/1901553077242798080/HLyntoRr_400x400.jpg",
-    "timestamp": "2025-11-01T15:08:29.778Z",
+    "timestamp": "2025-11-01T15:11:07.465Z",
     "tokens": [
         {
             "chainId": 1270,
