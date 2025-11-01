@@ -6,7 +6,7 @@ import arc from './tokens/arc'
 
 
 export const tokens = {
-  [Network.Uomi]: uomi,
+  // [Network.Uomi]: uomi,
   [Network.Irys]: irys,
   [Network.arc]: arc,
   [Network.Helios]: helios,
