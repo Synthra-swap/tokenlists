@@ -70,6 +70,10 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0xC5124C846c6e6307986988dFb7e743327aA05F19.png',
     }, //SYNTHRA
+    '0x89B50855Aa3bE2F677cD6303Cec089B5F319D72a': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x89B50855Aa3bE2F677cD6303Cec089B5F319D72a.webp',
+    }, //EURC
   },
 }
 
