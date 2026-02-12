@@ -11,5 +11,5 @@ export const tokens = {
   [Network.Irys]: irys,
   [Network.arc]: arc,
   [Network.Helios]: helios,
-  [Network.Robinhood]: robinhood,
+  [Network.robinhood]: robinhood,
 }
