@@ -22,6 +22,7 @@ export enum Network {
   Irys = '1270',
   Helios = '42000',
   arc = '5042002',
+  Robinhood = '46630',
 }
 
 export interface Config {
