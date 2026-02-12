@@ -20,6 +20,7 @@ import uomi from './uomi'
 import irys from './irys'
 import helios from './helios'
 import arc from './arc'
+import robinhood from './robinhood'
 
 const config: Configs = {
   [Network.Arbitrum]: arbitrum,
@@ -43,6 +44,7 @@ const config: Configs = {
   [Network.Irys]: irys,
   [Network.Helios]: helios,
   [Network.arc]: arc,
+  [Network.robinhood]: robinhood  
 }
 
 export default config
