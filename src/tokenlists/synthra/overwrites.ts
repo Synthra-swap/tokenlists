@@ -55,12 +55,11 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0xd567B3d7B8FE3C79a1AD8dA978812cfC4Fa05e75.png',
     }, //WBNB
-    
   },
   [Network.arc]: {
     '0x911b4000D3422F482F4062a913885f7b035382Df': {
       logoURI:
-         'https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
+        'https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
     }, //WUSDC
     '0x175CdB1D338945f0D851A741ccF787D343E57952': {
       logoURI:
@@ -75,10 +74,10 @@ export const overwrites: OverwritesForList = {
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x89B50855Aa3bE2F677cD6303Cec089B5F319D72a.webp',
     }, //EURC
   },
-   [Network.robinhood]: {
+  [Network.robinhood]: {
     '0xbf4479C07Dc6fdc6dAa764A0ccA06969e894275F': {
       logoURI:
-         'https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
+        'https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png',
     }, //USDC
     '0xC5124C846c6e6307986988dFb7e743327aA05F19': {
       logoURI:
@@ -88,6 +87,25 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x80b5a32E4F032B2a058b4F29EC95EEfEEB87aDcd.png',
     }, //WETH
+    '0x71178BAc73cBeb415514eB542a8995b82669778d': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/amd.avif',
+    }, //AMD
+    '0x5884aD2f920c162CFBbACc88C9C51AA75eC09E02': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/amazon.webp',
+    }, //AMAZON
+    '0xC9f9c86933092BbbfFF3CCb4b105A4A94bf3Bd4E': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/tesla.avif',
+    }, //TESLA
+    '0x3b8262A63d25f0477c4DDE23F83cfe22Cb768C93': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/netflix.avif',
+    }, //NETFLIX
+    '0x1FBE1a0e43594b3455993B5dE5Fd0A7A266298d0': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/palantir.avif',
+    }, //PALANTIR
   },
 }
-
