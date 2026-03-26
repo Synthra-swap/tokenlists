@@ -1,7 +1,7 @@
 {
     "name": "Synthra",
     "version": {
-        "major": 11,
+        "major": 12,
         "minor": 0,
         "patch": 1
     },
@@ -87,6 +87,14 @@
             "name": "Wrapped USDC",
             "symbol": "WUSDC",
             "decimals": 18,
+            "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
+        },
+        {
+            "chainId": 5042002,
+            "address": "0x3600000000000000000000000000000000000000",
+            "name": "USDC",
+            "symbol": "USDC",
+            "decimals": 6,
             "logoURI": "https://assets-cdn.trustwallet.com/blockchains/ethereum/assets/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48/logo.png"
         },
         {
