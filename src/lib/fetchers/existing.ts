@@ -1,5 +1,10 @@
-import { TokenInfo, TokenList } from '@uniswap/token-lists'
-import { Network, OverwritesForList, PartialTokenInfoMap } from '../../types'
+import {
+  Network,
+  OverwritesForList,
+  PartialTokenInfoMap,
+  TokenInfo,
+  TokenList,
+} from '../../types'
 import fs from 'fs'
 import { getAddress, isAddress } from 'ethers'
 import { merge, pick } from 'lodash'
@@ -23,10 +28,14 @@ async function fetchTrustWalletMetadata(
   network: Network
 ): Promise<PartialTokenInfoMap> {
   try {
-    // eslint-disable-next-line max-len
     const url = `https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/${config[network].trustWalletNetwork}/tokenlist.json`
     const response = await fetch(url)
-    const { tokens } = await response.json()
+    if (!response.ok) return {}
+
+    const body = await response.text()
+    if (!body.trim().startsWith('{')) return {}
+
+    const { tokens } = JSON.parse(body)
     for (const token of tokens) {
       // A couple of logo links in the trustwallet list are missing the token
       // address, this hack fixes them.
@@ -51,7 +60,7 @@ function fetchLocalTokenIcons(network: Network): PartialTokenInfoMap {
   const localImages: string[] = fs.readdirSync('src/assets/images/tokens')
   localImages.map((imageName) => {
     let address: string
-    const fileName = imageName.split('.png')[0]
+    const fileName = imageName.replace(/\.[^.]+$/, '')
 
     if (!isAddress(fileName)) {
       const [_network, _address] = (fileName as string).split('_')
@@ -66,8 +75,7 @@ function fetchLocalTokenIcons(network: Network): PartialTokenInfoMap {
 
     tokenIcons.push({
       address: getAddress(address),
-      // eslint-disable-next-line max-len
-      logoURI: `https://raw.githubusercontent.com/balancer/tokenlists/main/src/assets/images/tokens/${fileName.toLowerCase()}.png`,
+      logoURI: `https://raw.githubusercontent.com/Synthra-swap/tokenlists/main/src/assets/images/tokens/${imageName}`,
     })
   })
 

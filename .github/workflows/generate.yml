@@ -1,35 +1,43 @@
-name: Generate tokenlists
+name: Generate token list
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
   generate:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Install Dependencies
-        run: npm ci
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
 
-      - name: Generate Tokenlists
-        run: npm run generate
+      - run: npm ci
+
+      - run: npm run generate
         env:
           INFURA_KEY: ${{ secrets.INFURA_KEY }}
           ALCHEMY_KEY: ${{ secrets.ALCHEMY_KEY }}
           POKT_KEY: ${{ secrets.POKT_KEY }}
           COINGECKO_API_KEY: ${{ secrets.COINGECKO_API_KEY }}
 
-      - name: Commit and Push changes
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -B update-tokenlists
-          git add .
-          git commit -m "chore: Update generated tokenlists" || echo "No changes to commit"
-          git push origin update-tokenlists --force
+      - uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: 'chore: update generated token list'
+          branch: chore/update-generated-token-list
+          base: main
+          delete-branch: true
+          title: 'chore: update generated token list'
+          body: |
+            Automated update for generated/synthra.tokenlist.json.
+          labels: tokenlist

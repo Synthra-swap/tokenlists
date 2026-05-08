@@ -22,7 +22,14 @@ module.exports = {
     'prettier/prettier': 'warn',
     curly: ['error', 'multi-line'],
     'no-console': ['off'],
-    'max-len': ['warn', { ignoreComments: true }],
+    'max-len': [
+      'warn',
+      {
+        ignoreComments: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+      },
+    ],
     '@typescript-eslint/no-explicit-any': ['off'],
   },
 }

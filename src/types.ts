@@ -1,5 +1,3 @@
-import { TokenInfo, TokenList } from '@uniswap/token-lists'
-
 export enum Network {
   Ethereum = '1',
   Goerli = '5',
@@ -23,6 +21,33 @@ export enum Network {
   Helios = '42000',
   arc = '5042002',
   robinhood = '46630',
+}
+
+export interface Version {
+  major: number
+  minor: number
+  patch: number
+}
+
+export interface TokenInfo {
+  chainId: number
+  address: string
+  name: string
+  symbol: string
+  decimals: number
+  logoURI?: string
+  tags?: string[]
+  extensions?: Record<string, unknown>
+}
+
+export interface TokenList {
+  name: string
+  timestamp: string
+  version: Version
+  tokens: TokenInfo[]
+  keywords?: string[]
+  logoURI?: string
+  tags?: Record<string, { name: string; description: string }>
 }
 
 export interface Config {

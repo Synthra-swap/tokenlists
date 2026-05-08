@@ -1,6 +1,5 @@
-import { TokenInfo } from '@uniswap/token-lists'
 import chalk from 'chalk'
-import { Network } from '../../types'
+import { Network, TokenInfo } from '../../types'
 import { sleep } from '../utils'
 import config from '../../config'
 

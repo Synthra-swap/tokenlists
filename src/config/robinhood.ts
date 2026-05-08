@@ -1,4 +1,3 @@
-
 export default {
   name: 'robinhood',
   rpc: 'https://rpc.testnet.chain.robinhood.com',

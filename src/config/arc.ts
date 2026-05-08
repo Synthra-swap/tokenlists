@@ -1,4 +1,3 @@
-
 export default {
   name: 'arc',
   rpc: 'https://rpc.testnet.arc.network',

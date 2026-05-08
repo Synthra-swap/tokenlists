@@ -1,4 +1,3 @@
-
 export default {
   name: 'IRYS',
   rpc: 'https://testnet-rpc.irys.xyz/v1/execution-rpc',

@@ -8,13 +8,10 @@ on:
         description: Network
         required: true
         options:
-          - arbitrum
-          - avalanche
-          - mainnet
-          - gnosis-chain
-          - polygon
-          - optimism
-          - zkevm
+          - arc
+          - robinhood
+          - helios
+          - irys
       tokenAddress:
         type: string
         description: Token Address
@@ -27,6 +24,7 @@ on:
 jobs:
   allowlist-token:
     uses: ./.github/workflows/allowlist.yml
+    secrets: inherit
     with:
       network: ${{ github.event.inputs.network }}
       tokenAddress: ${{ github.event.inputs.tokenAddress }}

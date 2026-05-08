@@ -9,9 +9,9 @@
  */
 
 import { cac } from 'cac'
-import { allowListToken } from './edit-tokenlist.js'
+import { allowListToken } from './edit-tokenlist'
 import configs from '../../config'
-import { Config } from '../../types.js'
+import { Config } from '../../types'
 
 const cli = cac()
 cli

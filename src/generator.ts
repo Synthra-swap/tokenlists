@@ -1,19 +1,18 @@
 import 'dotenv/config'
-import { TokenList, TokenInfo } from '@uniswap/token-lists'
-import { Network, PartialTokenInfoMap, TokenListMetadata } from './types'
+import {
+  Network,
+  PartialTokenInfoMap,
+  TokenInfo,
+  TokenList,
+  TokenListMetadata,
+} from './types'
 import { fetchOnchainMetadata } from './lib/fetchers/onchain'
 import { fetchExistingMetadata } from './lib/fetchers/existing'
 import { merge } from 'lodash'
-import { fetchCoingeckoMetadata } from './lib/fetchers/coingecko'
 import fs from 'fs'
 import { getAddress } from 'ethers'
 import chalk from 'chalk'
-import {
-  getTokenlistSrc,
-  getTokenlistsToBuild,
-  isEqualTokenlists,
-  safeStringify,
-} from './lib/utils'
+import { getTokenlistSrc, isEqualTokenlists, safeStringify } from './lib/utils'
 
 /**
  * Primary generation function.
@@ -22,7 +21,7 @@ import {
  */
 async function run() {
   const tokenlistsToBuild = ['synthra']
-  // getTokenlistsToBuild()
+
   for (const tokenlist of tokenlistsToBuild) {
     console.log(chalk.bgGreen(`Building tokenlist: ${tokenlist}`))
     await build(tokenlist)

@@ -44,7 +44,7 @@ const config: Configs = {
   [Network.Irys]: irys,
   [Network.Helios]: helios,
   [Network.arc]: arc,
-  [Network.robinhood]: robinhood  
+  [Network.robinhood]: robinhood,
 }
 
 export default config

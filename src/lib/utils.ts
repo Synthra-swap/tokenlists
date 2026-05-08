@@ -1,8 +1,12 @@
 import { getAddress } from 'ethers'
 import path from 'path'
 import fs from 'fs'
-import { OverwritesForList, TokenListMetadata, TokensForList } from '../types'
-import { TokenList } from '@uniswap/token-lists'
+import {
+  OverwritesForList,
+  TokenList,
+  TokenListMetadata,
+  TokensForList,
+} from '../types'
 import { isEqual, omit } from 'lodash'
 
 export async function sleep(time: number) {
@@ -64,7 +68,6 @@ export async function getTokenlistSrc(tokenlistName: string): Promise<{
     throw new Error(`Metadata file not found for tokenlist: ${tokenlistName}`)
   }
   try {
-    console.log(tokensPath)
     tokens = await import(tokensPath)
   } catch (error) {
     throw new Error(`Tokens file not found for tokenlist: ${tokenlistName}`)

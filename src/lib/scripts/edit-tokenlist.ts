@@ -5,7 +5,7 @@ export function allowListToken({
   tokenAddress,
   tokenSymbol = '',
 }: Record<string, string>) {
-  const filePath = `./src/tokenlists/balancer/tokens/${network}.ts`
+  const filePath = `./src/tokenlists/synthra/tokens/${network}.ts`
 
   const fileContent = fs.readFileSync(filePath, 'utf-8')
 

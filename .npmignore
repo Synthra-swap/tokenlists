@@ -2,3 +2,8 @@ src
 tsconfig.json
 .turbo
 .env
+package-lock.json
+yarn.lock
+node_modules
+dist
+.DS_Store

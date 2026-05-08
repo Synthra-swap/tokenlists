@@ -7,6 +7,7 @@ on:
 jobs:
   allowlist-token:
     uses: ./.github/workflows/allowlist.yml
+    secrets: inherit
     with:
       network: ${{ github.event.client_payload.network }}
       tokenAddress: ${{ github.event.client_payload.tokenAddress }}
