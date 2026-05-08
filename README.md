@@ -21,6 +21,7 @@ npm run generate
 ```
 
 This updates `/generated/synthra.tokenlist.json`.
+The generated token list version is derived from `package.json`.
 
 ## NPM Package
 

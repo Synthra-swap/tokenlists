@@ -13,6 +13,7 @@ import fs from 'fs'
 import { getAddress } from 'ethers'
 import chalk from 'chalk'
 import { getTokenlistSrc, isEqualTokenlists, safeStringify } from './lib/utils'
+import packageJson from '../package.json'
 
 /**
  * Primary generation function.
@@ -84,12 +85,29 @@ async function build(tokenlistName: string) {
     console.timeEnd(chalk.cyan(`Generated tokens for chain ${network}`))
   }
 
-  const tokenList = buildTokenList(metadata, allTokens, existingTokenList)
+  const tokenList = buildTokenList(
+    withPackageVersion(metadata),
+    allTokens,
+    existingTokenList
+  )
 
   fs.writeFileSync(
     `./generated/${tokenlistName}.tokenlist.json`,
     safeStringify(tokenList)
   )
+}
+
+function withPackageVersion(metadata: TokenListMetadata): TokenListMetadata {
+  const [major, minor, patch] = packageJson.version.split('.').map(Number)
+
+  if ([major, minor, patch].some((part) => !Number.isInteger(part))) {
+    throw new Error(`Invalid package version: ${packageJson.version}`)
+  }
+
+  return {
+    ...metadata,
+    version: { major, minor, patch },
+  }
 }
 
 function buildTokenList(
