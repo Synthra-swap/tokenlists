@@ -62,6 +62,10 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/0x89B50855Aa3bE2F677cD6303Cec089B5F319D72a.webp',
     }, //EURC
+    '0xf0C4a4CE82A5746AbAAd9425360Ab04fbBA432BF': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/cirBTC.png',
+    }, // cirBTC
   },
   [Network.robinhood]: {
     '0xbf4479C07Dc6fdc6dAa764A0ccA06969e894275F': {
