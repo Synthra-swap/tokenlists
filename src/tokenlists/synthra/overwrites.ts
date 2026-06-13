@@ -66,6 +66,18 @@ export const overwrites: OverwritesForList = {
       logoURI:
         'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/cirBTC.png',
     }, // cirBTC
+    '0x836F73Fbc370A9329Ba4957E47912DfDBA6BA461': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/MNXB_Logo.webp',
+    }, // MXNB  
+    '0x23d7CFFd0876f3ABb6B074287ba2aeefBc83825d': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/QCAD.avif',
+    }, // QCAD
+    '0xd2a530170D71a9Cfe1651Fb468E2B98F7Ed7456b': {
+      logoURI:
+        'https://raw.githubusercontent.com/Synthra-swap/tokenlists/refs/heads/main/src/assets/images/tokens/forte-AUD.png',
+    }, // AUDF
   },
   [Network.robinhood]: {
     '0xbf4479C07Dc6fdc6dAa764A0ccA06969e894275F': {
